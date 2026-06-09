@@ -33,7 +33,7 @@ img {
 h1 {
     font-size: 3vw;
     color: white;
-    margin: 1vw;
+    margin: auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -73,26 +73,46 @@ p {
     overflow-y: scroll;
 }
 
-.container_1_5{
+.navbar{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    height: 100px;
+    background-color: #8095ff;
 }
 
 .container_1 :first-child {
     margin-top: 2vw;
 }
 
-.post-image {
+.post {
+    display: relative;
+}
+
+
+/* .post_text {
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    color: white;
+    font-size: 2vw;
+    bottom: 40%;
+    font-family: 'roboto', sans-serif;
+
+} */
+
+.post_background {
+    position: relative;
     width: 80%;
-    height: 30vh;
+    height: 35vh;
     border-radius: 50px;
     object-fit: cover;
     object-position: center;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+
 }
 
-.post-image:hover {
+.post_background:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
