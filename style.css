@@ -73,12 +73,29 @@ p {
     overflow-y: scroll;
 }
 
+.container_2_1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_1_2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+}
+
 .navbar{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr auto 1fr 1fr;
     height: 100px;
     background-color: #8095ff;
+}
+
+h2 > a {
+    color: black;
+    text-decoration: none;
 }
 
 .container_1 :first-child {
@@ -89,6 +106,74 @@ p {
     display: relative;
 }
 
+/* ----- Post Content ----- */
+.post_main_image {
+    object-fit: cover;
+    height: 40vh;
+}
+
+p{
+    font-size: 25px;
+}
+
+.spoiler_warning {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #4ea4d6, #6779d3);
+}
+
+.spoiler {
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(to right, #4ea4d6, #6779d3);
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.spoiler:hover {
+    color: black;
+    background-color: transparent;
+}
+
+/* ----- Images Spoilers ----- */
+.spoiler_image {
+    background-image: linear-gradient(to right, #4ea4d6, #6779d3);
+    filter:blur(5px);
+    transition: 0.3s;
+}
+
+.spoiler_image:hover {
+    filter:blur(0px);
+}
+
+/* ---- Rating ----- */
+.rating_silver {
+    /* background-image: linear-gradient(to right, gold, goldenrod); */
+    background-image: linear-gradient(to right, grey, silver);
+    text-shadow: grey;
+    padding: 4%;
+    border-radius: 100px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+/* ----- Post Thumbnails ----- */
+.post_background {
+    position: relative;
+    width: 80%;
+    height: 35vh;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1vw;
+}
+
+.post_background:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 /* .post_text {
     position: relative;
@@ -100,19 +185,3 @@ p {
     font-family: 'roboto', sans-serif;
 
 } */
-
-.post_background {
-    position: relative;
-    width: 80%;
-    height: 35vh;
-    border-radius: 50px;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 1vw;
-
-}
-
-.post_background:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
