@@ -28,7 +28,13 @@ img {
     height: auto;
     width: 90%;
     border-radius: 50px;
+    transition: 0.3s;
 }
+
+img:hover {
+    transform: scale(1.05);
+}
+
 
 h1 {
     font-size: 3vw;
@@ -66,6 +72,8 @@ a {
     border-radius: 50px;
     overflow: hidden;
 }
+
+
 /* ----- Containers are set up as "container", num of columns, num of rows */
 .container_1 {
     display: grid;
@@ -78,10 +86,22 @@ a {
     overflow-y: scroll;
 }
 
+.img_center {
+    width: 50vw;
+}
+
 .container_2_1{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
+}
+
+.container_2_1_big_right {
+    grid-template-columns: 1fr 2fr
+}
+
+.container_2_1_big_left {
+    grid-template-columns: 2fr 1fr
 }
 
 .container_2_1 > img {
@@ -115,14 +135,55 @@ h2 > a {
     display: relative;
 }
 
+/* ----- Container Responsiveness ----- */
+@media (min-width: 601px){
+    p{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px){
+    h1 {
+        font-size: 3vh;
+    }
+
+    h2 {
+        font-size: 2vh;
+        padding: 4%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 85vw;
+        height: 90vh;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .container_1_2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .container_2_1 {
+        grid-template-columns: 1fr;
+    }
+
+    .img_center {
+        width: 95%;
+    }
+}
+
 /* ----- Post Content ----- */
 .post_main_image {
     object-fit: cover;
     height: 40vh;
-}
-
-p{
-    font-size: 25px;
 }
 
 .spoiler_warning {
@@ -155,10 +216,9 @@ p{
 
 .spoiler_image:hover {
     filter:blur(0px);
-    transform: scale(1.05);
 }
 
-/* ---- Rating ----- */
+/* ---- Rating and Conclusion ----- */
 .rating_silver {
     /* background-image: linear-gradient(to right, gold, goldenrod); */
     background-image: linear-gradient(to right, grey, silver);
@@ -167,6 +227,10 @@ p{
     border-radius: 100px;
     margin-top: 2%;
     margin-bottom: 3%;
+}
+
+.conclusion {
+    margin-top: 5%;
 }
 
 /* ----- Post Thumbnails ----- */
@@ -181,7 +245,6 @@ p{
 }
 
 .post_background:hover {
-    transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
