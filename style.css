@@ -141,6 +141,18 @@ h2 > a {
     p{
         font-size: 27px;
     }
+
+    .container_2_1_big_right {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .container_2_1_big_left {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 @media (max-width: 600px){
