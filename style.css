@@ -92,26 +92,26 @@ a {
 
 .container_2_1{
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
 .container_2_1_big_right {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
 }
 
 .container_2_1_big_left {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
 }
 
 
 .container_1_2{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -144,13 +144,13 @@ h2 > a {
 
     .container_2_1_big_right {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
     }
 
     .container_2_1_big_left {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         grid-template-columns: 2fr 1fr;
     }
 }
