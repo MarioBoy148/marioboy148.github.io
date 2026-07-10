@@ -176,7 +176,6 @@ h2 > a {
 
     .navbar {
         display: grid;
-
         grid-template-columns: 1fr;
         height: auto;
     }
@@ -227,7 +226,6 @@ h2 > a {
 
 /* ----- Images Spoilers ----- */
 .spoiler_image {
-    background-image: linear-gradient(to right, #4ea4d6, #6779d3);
     filter:blur(5px);
     transition: 0.3s;
 }
